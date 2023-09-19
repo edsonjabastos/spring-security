@@ -21,7 +21,8 @@ public class SecurityConfig {
                             .requestMatchers("/logout").permitAll();
                     authorizeConfig.anyRequest().authenticated();
                 })
-                .formLogin(Customizer.withDefaults());
+                .oauth2Login(Customizer.withDefaults());
+                // .formLogin(Customizer.withDefaults());
         return http.build();
     }
 
