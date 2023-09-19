@@ -8,4 +8,4 @@ spring:
             client-secret:
       resourceserver:
         jwt:
-          issuer-uri:
+          issuer-uri:  https://accounts.google.com
